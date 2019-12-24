@@ -1,0 +1,6 @@
+framework module Pods_TYTextFieldDemo {
+  umbrella header "Pods-TYTextFieldDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
