@@ -10,9 +10,30 @@ import Foundation
 
 public class TYPinCodeTextField: TYNormalTextField {
     override func createTextField(frame: CGRect) -> _TextField {
-        let tf = _TextField(frame: frame, isPinCode: true, pinCodeCount: 6)
+        let tf = _TextField(frame: frame, isPinCode: true, pinCodeCount: 4)
         return tf
     }
     
+    //MARK: - Initializations
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        setUp()
+    }
     
+    public override init(labelText: String, frame: CGRect) {
+        super.init(frame: frame)
+        setUp()
+        
+        label.text = labelText
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError()
+    }
+    
+    //MARK: - Helper
+    private func setUp() {
+        
+    }
 }

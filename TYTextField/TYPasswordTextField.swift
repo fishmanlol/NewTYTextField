@@ -16,7 +16,6 @@ public class TYPasswordTextField: TYNormalTextField {
         }
     }
     
-    
     public override var rightView: UIView? {
         didSet {
             didChangeRightView()
